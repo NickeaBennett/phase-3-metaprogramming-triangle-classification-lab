@@ -12,7 +12,7 @@ class Triangle
     [a, b, c].permutation do |sides|
       raise TriangleError unless sides[0] + sides[1] > sides[2]
     end
-    case [a,b,c].uniq.size
+    case [a, b, c].uniq.size
       when 3; :scalene
       when 2; :isosceles
       when 1; :equilateral
